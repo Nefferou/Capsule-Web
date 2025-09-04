@@ -1,0 +1,297 @@
+/* ===============================
+   0) STYLE GLOBALE
+================================== */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #e5e7eb;
+  /* texte clair */
+  background: #0f172a;
+  /* fond sombre */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+/* ===============================
+   1) LAYOUT SIMPLE
+================================== */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.site-header {
+  background: #111827;
+  border-bottom: 1px solid #1f2937;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav a {
+  margin-left: 0.75rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.site-nav a:hover {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.site-footer {
+  border-top: 1px solid #1f2937;
+  background: #0b1222;
+  color: #9ca3af;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* ===============================
+   2) COMPOSANTS SIMPLES (cards)
+================================== */
+.card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.card--relative {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #f87171;
+  /* rouge */
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.mot-cle {
+  background: rgba(96, 165, 250, .15);
+  /* bleu clair */
+  border: 1px solid rgba(96, 165, 250, .3);
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+/* ===============================
+   3) BOX MODEL
+================================== */
+.box-model-demo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
+}
+
+.box--margin {
+  background: rgba(196, 181, 253, 0.25);
+  /* violet clair */
+  padding: 14px;
+}
+
+.box--border {
+  background: rgba(248, 113, 113, 0.15);
+  /* rouge clair */
+  border: 3px solid rgba(214, 45, 45, 0.8);
+}
+
+.box--padding {
+  background: rgba(251, 191, 36, 0.25);
+  /* orange clair */
+  padding: 20px;
+}
+
+.box--content {
+  background: rgba(96, 165, 250, 0.35);
+  /* bleu clair */
+  border: 1px dashed rgba(96, 165, 250, 0.8);
+  padding: 10px;
+}
+
+.box-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.box-legend li {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.legend {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  border: 1px solid #444;
+}
+
+.legend.margin {
+  background: rgba(196, 181, 253, 0.25);
+}
+
+/* violet */
+.legend.border {
+  background: rgba(214, 45, 45, 0.8);
+}
+
+/* rouge */
+.legend.padding {
+  background: rgba(251, 191, 36, 0.25);
+}
+
+/* orange */
+.legend.content {
+  background: rgba(96, 165, 250, 0.35);
+}
+
+/* bleu */
+
+/* ===============================
+   4) GRILLES
+================================== */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "aside  content"
+    "footer footer";
+  gap: 12px;
+  margin: 1rem 0;
+}
+
+.zone--header {
+  grid-area: header;
+}
+
+.zone--aside {
+  grid-area: aside;
+}
+
+.zone--content {
+  grid-area: content;
+}
+
+.zone--footer {
+  grid-area: footer;
+}
+
+.zone {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+  padding: 0.75rem;
+  min-height: 60px;
+}
+
+/* ===============================
+   5) POSITIONNEMENT
+================================== */
+.position-demo {
+  position: relative;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+  background: #111827;
+  padding: 12px;
+  margin: 1rem 0 2.5rem;
+}
+
+.pos {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  padding: 10px;
+  min-height: 48px;
+  margin-bottom: 10px;
+}
+
+/* static */
+.pos--static {
+  position: static;
+}
+
+/* relative */
+.pos--relative {
+  position: relative;
+  top: 6px;
+  left: 6px;
+  border: 1px dashed #9ca3af;
+}
+
+/* absolute */
+.pos--absolute-wrapper {
+  position: relative;
+  border: 1px dashed #9ca3af;
+  border-radius: 6px;
+  padding: 10px;
+  height: 100px;
+}
+
+.pos--absolute {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #34d399;
+  /* vert accent */
+  color: #0b1222;
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+
+/* fixed */
+.pos--fixed {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  background: #60a5fa;
+  /* bleu */
+  color: #fff;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 14px;
+}

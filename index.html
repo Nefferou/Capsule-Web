@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Capsule-Web</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- HEADER + NAV -->
+    <header class="site-header">
+        <div class="container">
+            <h1>Capsule-Web</h1>
+            <nav class="site-nav">
+                <a href="#intro">Intro</a>
+                <a href="#balises">Balises</a>
+                <a href="#mise-en-page">Mise en page</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="sr-only">Capsule - Web</h1>
+
+        <!-- SECTION 1 : Introduction -->
+        <section id="intro" class="container">
+            <h2>1 - Introduction</h2>
+            <p>
+                <strong>HTML</strong> : décrit le contenu (titres, paragraphes, images).<br />
+                <strong>CSS</strong> : gère la présentation (couleurs, tailles, mise en page).
+            </p>
+            <p>
+                Exemple de lien :
+                <a href="https://github.com/Nefferou/Capsule-Web" target="_blank">Lien du GitHub</a>
+            </p>
+            <p>
+                Exemple d'image :
+                <img src="./images/html-css-js.png" alt="Logos HTML, CSS et JavaScript" />
+            </p>
+        </section>
+
+        <!-- SECTION 2 : Balises de base -->
+        <section id="balises" class="container">
+            <h2>2 - Balises de base</h2>
+
+            <div class="card" id="box-exemple">
+                <h1>H1 - Titre principal</h1>
+                <h2>H2 - Titre de section</h2>
+                <h3>H3 - Titre de sous-section</h3>
+                <p>
+                    P - Ceci est un paragraphe avec du <strong>strong (texte en gras)</strong> et un
+                    <em>em (texte en italique)</em>. On peut aussi styliser un mot avec la balise <span
+                        class="mot-cle">span</span>.
+                </p>
+
+                <div class="grid-2">
+                    <div>
+                        <h4>Liste à puces <span class="mot-cle">ul</span></h4>
+                        <ul>
+                            <li>Élément 1</li>
+                            <li>Élément 2</li>
+                            <li>Élément 3</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Liste numérotée <span class="mot-cle">ol</span></h4>
+                        <ol>
+                            <li>Étape 1</li>
+                            <li>Étape 2</li>
+                            <li>Étape 3</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3 : Mise en page -->
+        <section id="mise-en-page" class="container">
+            <h2>3 - Mise en page</h2>
+
+            <!-- 3.1 Box Model -->
+            <h3>3.1 - Organiser en boîte (Box)</h3>
+            <div class="card">
+                <h3>Box Model</h3>
+                <p>Chaque élément est une boîte avec <strong>content</strong>, <strong>padding</strong>,
+                    <strong>border</strong> et <strong>margin</strong>.
+                </p>
+
+                <div class="box-model-demo">
+                    <div class="box--margin">
+                        <div class="box--border">
+                            <div class="box--padding">
+                                <div class="box--content">Contenu</div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="box-legend">
+                        <li><span class="legend margin"></span> Margin</li>
+                        <li><span class="legend border"></span> Border</li>
+                        <li><span class="legend padding"></span> Padding</li>
+                        <li><span class="legend content"></span> Content</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3.2 Grid -->
+            <h3>3.2 - Organiser en colonnes/lignes (Grid)</h3>
+            <div class="grid-layout">
+                <header class="zone zone--header">Header</header>
+                <aside class="zone zone--aside">Sidebar</aside>
+                <section class="zone zone--content">
+                    Contenu principal.
+                </section>
+                <footer class="zone zone--footer">Footer</footer>
+            </div>
+
+            <!-- 3.3 Positionnement -->
+            <h3>3.3 - Placer les éléments (Positionnement)</h3>
+            <div class="position-demo">
+                <div class="pos pos--static">Static (par défaut)</div>
+                <div class="pos pos--relative">Relative (décalée avec <code>top/left</code>)</div>
+                <div class="pos pos--absolute-wrapper">
+                    <div class="pos pos--absolute">Absolute (par rapport au wrapper)</div>
+                </div>
+                <div class="pos pos--fixed">Fixed (coin bas-droite écran)</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© Julien FERTILATI 2025 - Capsule HTML/CSS</small>
+        </div>
+    </footer>
+</body>
+
+</html>

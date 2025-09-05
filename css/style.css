@@ -117,10 +117,9 @@ a:hover {
    3) BOX MODEL
 ================================== */
 .box-model-demo {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;        
   gap: 12px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .box--margin {
@@ -188,14 +187,12 @@ a:hover {
   background: rgba(96, 165, 250, 0.35);
 }
 
-/* bleu */
-
 /* ===============================
    4) GRILLES
 ================================== */
 .grid-layout {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header"

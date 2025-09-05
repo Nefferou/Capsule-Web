@@ -1,7 +1,7 @@
 # TP – Capsule Web
 
 ## ➕ Étape 1 – Créer la structure du projet
-1. Crée un dépôt GitHub et le cloner sur votre PC *(Rappel : `git clone <nom-du-projet>`)*
+1. Crée un dépôt GitHub et clonez le sur votre PC *(Rappel : `git clone <nom-du-projet>`)*
 2. Dans ce dossier, ajoute :  
    - Un fichier `index.html`
    - Un dossier `css`
@@ -101,7 +101,7 @@ a {
 }
 ```
 
-> ℹ️ Pour d&finir une couleur, 3 formats s'offre à vous :
+> ℹ️ Pour définir une couleur, 3 formats s'offre à vous :
 > - Nom de couleur `color: red;`
 > - RGB `color: rgb(255, 0, 0);`
 > - Hexadecimal `color: #ff0000;`
@@ -158,6 +158,8 @@ Avec `#unique`, seul celui qui a cet ID changera.
 > - `p` : Sélectionne toutes les balises `<p>`
 > - `#unique` : Sélectionne l'élément avec l'id "unique"
 > - `.exemple` : Sélectionne tous les éléments avec la class "exemple"
+
+> ⚠️ Un ID (#) doit être unique dans la page, une classe (.) peut être réutilisée plusieurs fois.”
 
 ---
 
